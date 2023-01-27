@@ -1,0 +1,97 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body { 
+    background-color: tomato;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 325px;
+}
+
+.content {
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#loading {
+    display: none;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    /* background-color: beige; */
+    border-top: 20px solid green;
+    top: 50%;
+    left: 50%;
+    z-index: inherit;
+    border-radius: 50%;
+    animation: 1s spin infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        
+    }
+}
+
+.credit {
+    margin-top: 20px;
+}
+
+button {
+    border: 0 solid transparent;
+    border-radius: 5px;
+    background-color: aqua;
+    font-size: 24px;
+    padding: 16px;
+    margin-left: 5px;
+    height: 65px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.3s all ease-in-out;
+}
+
+input {
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#pertanyaan {
+    font-size: 1.6em;
+    font-weight: 300;
+    width: 600px;
+    text-align: center;
+}
